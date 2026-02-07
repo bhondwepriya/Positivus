@@ -28,24 +28,22 @@ The project focuses on clean UI, reusable components, and pixel-perfect responsi
 ## 📁 Project Structure
 
 src/
-├── assets/ # Images, icons, SVGs
-├── components/ # Reusable UI components
-│ ├── SectionTitle.jsx
-│ ├── ServiceCard.jsx
-│ ├── TestimonialCard.jsx
-│ └── ...
-├── data/ # Static data (services, testimonials)
-│ ├── services.js
-│ └── testimonials.js
-├── pages/ # Page sections
-│ ├── Services.jsx
-│ ├── Testimonials.jsx
-│ └── ...
+├── assets/                 # Images, icons, SVGs
+├── components/             # Reusable UI components
+│   ├── SectionTitle.jsx
+│   ├── ServiceCard.jsx
+│   ├── TestimonialCard.jsx
+│   └── ...
+├── data/                   # Static data (services, testimonials)
+│   ├── services.js
+│   └── testimonials.js
+├── pages/                  # Page sections
+│   ├── Services.jsx
+│   ├── Testimonials.jsx
+│   └── ...
 ├── App.jsx
 └── main.jsx
 
-
----
 
 ## 🧩 Reusable Components
 
