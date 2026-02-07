@@ -1,16 +1,104 @@
-# React + Vite
+# Positivus – Digital Marketing Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive digital marketing website built using **React** and **Tailwind CSS**, based on the **Positivus Figma design**.  
+The project focuses on clean UI, reusable components, and pixel-perfect responsiveness for both **desktop and mobile**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## React Compiler
+- **React (Vite)**
+- **Tailwind CSS**
+- **JavaScript (ES6+)**
+- **Figma (UI Reference)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fully responsive (Desktop & Mobile)
+- Reusable UI components
+- Clean, modern design
+- Testimonial slider (custom logic, no library)
+- Service cards & accordion sections
+- Accessible & scalable structure
+
+---
+
+## 📁 Project Structure
+
+src/
+├── assets/ # Images, icons, SVGs
+├── components/ # Reusable UI components
+│ ├── SectionTitle.jsx
+│ ├── ServiceCard.jsx
+│ ├── TestimonialCard.jsx
+│ └── ...
+├── data/ # Static data (services, testimonials)
+│ ├── services.js
+│ └── testimonials.js
+├── pages/ # Page sections
+│ ├── Services.jsx
+│ ├── Testimonials.jsx
+│ └── ...
+├── App.jsx
+└── main.jsx
+
+
+---
+
+## 🧩 Reusable Components
+
+### `SectionTitle`
+Used across:
+- Services
+- Working Process
+- Testimonials
+
+Supports:
+- Desktop: title on left, description on right
+- Mobile: title centered, description below
+
+---
+
+### `ServiceCard`
+- Image + title layout
+- Hover effects
+- Figma-accurate spacing
+
+---
+
+### `TestimonialCard`
+- Speech bubble design
+- Name & role outside the card
+- Active/inactive state styling
+- Mobile: single card
+- Desktop: three cards
+
+---
+
+## 📱 Responsive Behavior
+
+| Section        | Mobile                         | Desktop                        |
+|---------------|--------------------------------|--------------------------------|
+| Section Title | Centered                       | Left + Right layout            |
+| Testimonials  | 1 card                         | 3 cards (center active)        |
+| Navigation    | Stacked                        | Horizontal                     |
+| Footer        | Column layout                  | Grid layout                    |
+
+---
+
+## 🛠️ Installation & Setup
+
+```bash
+# Clone repository
+git clone https://github.com/your-username/positivus.git
+
+# Navigate to project
+cd positivus
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
